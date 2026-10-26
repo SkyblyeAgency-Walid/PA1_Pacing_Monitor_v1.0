@@ -1,0 +1,7 @@
+EventID,ClientID,CampaignID,Window,Measured,RulesExpected
+E1 Overspend run,Client B,CMP-012,last 3 days,spend at 162% / 155% / 165% of cap,R3 + R1 (120.1% projected)
+E2 CPA doubling,Client D,CMP-030,last 3d vs trailing 14d,CPA $160 = 2.49x trailing $64,R3 + R4 + R6
+E3 Single-day spike,Client E,CMP-040,yesterday,$227 = 4.2x median $54,R3 + R6
+E4 Zero conversions,Client F,CMP-051,last 2 days,"$400 spent, 0 conversions",R3 + R5 + R6
+E5 Underspend,Client A,ALL,month to date,54.5% of budget projected (fires when day >= 10),R2
+E6 Slow creep,Client G,CMP-061,last 7d vs prior 7d,avg $160 = 1.57x prior avg $102,R3 + R6

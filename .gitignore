@@ -1,0 +1,13 @@
+.clasp.json
+.clasprc.json
+__pycache__/
+*.pyc
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+*.token
+*.env
+*.zip
+node_modules/
+RECORDING_RUNBOOK.md
