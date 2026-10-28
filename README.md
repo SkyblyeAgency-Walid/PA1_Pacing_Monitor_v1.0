@@ -125,17 +125,6 @@ Regenerate the data anytime (identical numbers): `python tools/gen_pa1_seed.py`
 
 Run the regression harness anytime (needs only Node): `node tools/verify_pa1_e2e.js`
 
-## The 90-second demo flow (time travel)
-
-Full shot list with pre-verified teleprompter numbers: **[RECORDING_RUNBOOK.md](RECORDING_RUNBOOK.md)**.
-
-1. Show `SEED_MAP` (what was injected) and `FACTS_DAILY` ending 2026-10-24
-2. **Run daily monitor** → toast: `Appended 2026-10-25 · evaluated 2026-10-24, 2026-10-25 · 13 new alert(s) (3 critical) · digest sent`
-3. The alert email arrives on screen — subject `PA1 Alerts - 3 critical / 10 warning`, grouped by client, criticals on top
-4. Open `ALERTS_LOG` — 13 rows, every alert on an injected target, zero on healthy campaigns
-5. Click **Run daily monitor** again → `0 new alert(s)` — the 20h cooldown
-6. Close on the footer line: *"Alerts land the morning something drifts — not at month-end."*
-
 ## Design decisions
 
 - **2-day evaluation window**: each run evaluates the two most recent fact days, so the first
